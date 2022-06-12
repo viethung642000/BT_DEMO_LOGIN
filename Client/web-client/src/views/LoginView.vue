@@ -42,10 +42,9 @@ export default {
         try {
           const res = await axios.get(
             "https://localhost:7222/api/Albums/" + this.user
-          );
+          ); // doi link api o day
 
           userdata.value = res.data;
-          // console.log(this.user);
           if (userdata.value != null) {
             await this.CheckPass(userdata);
           } else {
@@ -59,7 +58,7 @@ export default {
     },
     CheckPass: function (userdata) {
       if (this.pass.trim() === userdata.value.title.trim()) {
-        this.$router.push("/next");
+        this.$router.push("/next"); // Doi duong dan danh sach user vao day
       } else {
         alert("Login fail...");
       }
