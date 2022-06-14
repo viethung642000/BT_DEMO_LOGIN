@@ -78,7 +78,7 @@ export default {
         );
         console.log(res.data);
         users.value = res.data;
-      } catch (ex) {
+      } catch (error) {
         console.log("error");
       }
     };
