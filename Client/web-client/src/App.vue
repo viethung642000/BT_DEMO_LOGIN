@@ -1,11 +1,12 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
+  <!-- <nav>
+    <router-link to="/">Home</router-link>
     <router-link to="/about">About</router-link>
-  </nav>
+  </nav> -->
   <router-view />
 </template>
 
+<script></script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
